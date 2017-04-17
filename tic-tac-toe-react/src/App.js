@@ -60,7 +60,7 @@ handleClick(index) {
         )
       })}
         </div>
-        { this.state.winner ? <h1 className="winner">{'The winner is ${this.state.winner}'}</h1> : null}
+        { this.state.winner ? <h1 className="winner">{`The winner is ${this.state.winner}`}</h1> : null}
       </div>
     );
 
