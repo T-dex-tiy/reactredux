@@ -10,7 +10,7 @@ class App extends Component{
       play_x: "X",
       play_o: "O",
       player: "x",
-      boards: [
+      playground: [
         '','','','','','','','','',
       ]
     }
@@ -19,11 +19,12 @@ class App extends Component{
 
   render() {
     return (
-      <div className="playground">
-      {this.state.playground.map((cell) => {
-        return <div className="Unitas">(cell)</div>
-      })}
-
+      <div className='App'>
+        <div className='playground'>
+        {this.state.playground.map((cell, index) => {
+          return <div className='cell' key={index}>{cell}</div>
+        })}
+        </div>
       </div>
     );
   }
